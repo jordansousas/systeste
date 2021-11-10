@@ -13,6 +13,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['localhost', '*']
 
 INSTALLED_APPS = [
+    'apps.home',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -83,7 +84,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = 'media'
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join{BASE_DIR, 'staticfiles'}
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIR = {
     'files_static'
