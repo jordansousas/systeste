@@ -14,6 +14,11 @@ ALLOWED_HOSTS = ['localhost', '*']
 
 INSTALLED_APPS = [
     'apps.home',
+    'apps.info',
+    'apps.depor',
+    'apps.video',
+    'apps.sobre',
+    'apps.bio',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

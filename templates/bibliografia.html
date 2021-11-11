@@ -1,0 +1,99 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Saúde Pública</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="shortcut icon" href="{% static 'icone/favicon.ico' %}" type="image/x-icon">
+<link href="http://fonts.googleapis.com/css?family=Raleway:400,200,500,600,700,800,300" rel="stylesheet" />
+<link href="{% static 'css/default.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/fonts.css' %}" rel="stylesheet" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="wrapper">
+	<div id="menu-wrapper">
+		<div id="menu" class="container">
+			<ul>
+				<li><a href="{% url 'home' %}">Página Principal</a></li>
+				<li><a href="{% url 'info' %}">Informe-se a respeito</a></li>
+				<li><a href="{% url 'depor' %}">Depoimentos</a></li>
+				<li><a href="{% url 'video' %}">Vídeos recomendados</a></li>
+				<li class="current_page_item"><a href="#">Sobre</a></li>
+			</ul>
+		</div>
+
+	</div>
+	<div id="page" class="container">
+		<div id="content">
+			<div class="title">
+				<h2>BIBLIOGRAFIA</h2>
+				<br>
+				<span class="byline">Registros bibliográficos utilizados para a produção do conteúdo presente no site.</span> </div>
+
+				<ul>
+					<li>
+					<p align="justify">Ver PAIM, J.S. 1980. "As ambigüidades da noção de necessidade em saúde" in Planejamento. Salvador. 8 (1/2), pp. 39-46.</p>
+					</li>
+					<li>
+					<p align="justify">Ver PAIM, J.S. 1992. "La Salud Colectiva y los Desafios de la práctica". In: Organización Panamericana de la Salud (org.) 1992. La Crisis de la Salud Pública: Reflexiones para el Debate. Washington. D.C. O.P.S.; p.540.</p>
+					</li>
+					<li>
+					<p align="justify">Ver FRENK, J. 1992. "La Nueva Salud Pública" In: Organización Panamericana de la Salud (org.) 1992. La Crisis de la Salud Pública: Reflexiones para el Debate. Washington. D.C. O.P.S.; pp. 75-93.</p>
+					</li>
+					<li>
+					<p align="justify">Ver SCHRAMM, F.R. 1993. A Terceira Margem da Saúde: A Ética Natural. Tese de Doutorado em Saúde Pública. Escola Nacional de Saúde Pública. Fundação Oswaldo Cruz. Rio de Janeiro (cópia reprográfica).</p>
+					</li>
+					<li>
+					<p align="justify">Ver PIRES-FILHO, F.M. 1987. "O que é Saúde Pública?" Cadernos de Saúde Pública. Vol. 3 (1), pp. 62-70.</p>
+					</li>
+					<li>
+					<p align="justify">Ver SABROZA, P.C. 1994. "Saúde Pública: Procurando os Limites da Crise". Documento para debate. Departamento de Grandes Endemias. ENSP/FIOCRUZ. 17 ps. (cópia reprográfica).</p>
+					</li>
+					<li>
+					<p align="justify">Ver THACKER, S.B.; STROUP, D.F. 1994 "Future Directions for Comprehensive Public Health Surveillance and Health Information Systems in the United States". American Journal of Epidemiology. Vol. 140 no. 5, pp. 383-397.</p>
+					</li>
+				</ul>
+
+				<p><strong>(Com informações da Agência Brasil)</strong></p>
+
+		</div>
+		<div id="sidebar">
+			<div class="box2">
+				<div class="title">
+					<h2>Outras fontes:</h2>
+				</div>
+				<ul class="style2">
+
+					<li align="justify"><a href="https://www.paho.org/bra/index.php?option=com_content&view=article&id=340:funcoes-essenciais-de-saude-publica-fesp&Itemid=444">https://www.paho.org/bra/index.php?option=com_content&view=article&id=340:funcoes-essenciais-de-saude-publica-fesp&Itemid=444</a></li>
+					<li align="justify"><a href="http://www.fiocruz.br/bibsp/cgi/cgilua.exe/sys/start.htm?sid=107">http://www.fiocruz.br/bibsp/cgi/cgilua.exe/sys/start.htm?sid=107</a></li>
+					<li align="justify"><a href="http://www.escoladesaude.pr.gov.br/arquivos/File/saude_publica_4.pdf">http://www.escoladesaude.pr.gov.br/arquivos/File/saude_publica_4.pdf</a></li>
+					<li align="justify"><a href="http://www.conjur.com.br">http://www.conjur.com.br</a></li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="copyright" class="container">
+	<p>INSTITUTO FEDERAL DO MARANHÃO (CAMPUS BACABAL) | TRABALHO DE AUTORIA WEB</p>
+</div>
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body>
+</html>

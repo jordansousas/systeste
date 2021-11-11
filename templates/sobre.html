@@ -1,0 +1,124 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Saúde Pública</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="shortcut icon" href="{% static 'icone/favicon.ico' %}" type="image/x-icon">
+<link href="http://fonts.googleapis.com/css?family=Raleway:400,200,500,600,700,800,300" rel="stylesheet" />
+<link href="{% static 'css/default.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/fonts.css' %}" rel="stylesheet" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="wrapper">
+	<div id="menu-wrapper">
+		<div id="menu" class="container">
+			<ul>
+				<li><a href="{% url 'home' %}">Página Principal</a></li>
+				<li><a href="{% url 'info' %}">Informe-se a respeito</a></li>
+				<li><a href="{% url 'depor' %}">Depoimentos</a></li>
+				<li><a href="{% url 'video' %}">Vídeos recomendados</a></li>
+				<li class="current_page_item"><a href="#">Sobre</a></li>
+			</ul>
+		</div>
+
+	<div id="header-wrapper">
+		<div id="header" class="container">
+			<div id="logo">
+				<h1><a href="#">Sobre o SITE</a></h1>
+				<p>Saiba o motivo e finalidade da criação do site!</p>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div id="page" class="container">
+		<div id="content">
+			<div class="title">
+				<h2>Disciplina de Autoria Web</h2>
+				<br>
+				<span class="byline">Professor Marcelo Eugenio</span> </div>
+
+				<audio preload="metadata" controls autoplay loop>
+					<source src="{% static 'narracao/audio-sobre.mp3' %}" type="audio/mpeg">
+					<p>Ops! Seu navegador não suporta reproduzir o áudio. <a href="narracao/audio-sobre.mp3">Clique aqui para realizar o download do arquivo MP3.</a></p>
+				</audio>
+
+				<p><hr></p>
+
+				<ul>
+					<li>ALUNOS:</li>
+					<br>
+					<ul>
+						<li><strong>Danilo de Brito Morais;</strong></li>
+						<br>
+						<li><strong>Jamilly da Silva Fernandes;</strong></li>
+						<br>
+						<li><strong>Jordan Sousa da Silva;</strong></li>
+						<br>
+						<li><strong>José Lucas Torres da Silva;</strong></li>
+						<br>
+						<li><strong>Nicolly Ádrya Nascimento Almeida;</strong></li>
+						<br>
+						<li><strong>Reidyere Nascimento da Silva.</strong></li>
+						<br>
+					</ul>
+					<li>TURMA:</li>
+					<br>
+					<ul>
+						<li>Informática II (TIFI 2)</li>
+						<br>
+					</ul>
+					<li>TEMA DO SITE:</li>
+					<br>
+					<ul>
+						<li>Saúde Pública</li>
+						<br>
+					</ul>
+				</ul>
+
+				<p align="justify">Esse site foi feito com a finalidade de testar as habilidades dos alunos matrículados no curso "Autoria Web" em utilizar HTML para criar sites. Através do que aprendemos em sala de aula, criamos um site em HTML5 sobre "Saúde Pública" e usamos recursos de CSS para estilizá-lo. </p>
+
+				<p>Não sabe o que é HTML e CSS? <a href="https://www.isbrasil.info/blog/html-x-css-afinal-quais-sao-as-diferencas.html" target="_blank">Clique aqui!</a></p>
+
+		</div>
+		<div id="sidebar">
+			<div class="box2">
+				<div class="title">
+					<h2>NOTÍCIAS</h2>
+				</div>
+				<ul class="style2">
+
+					<li align="justify"><a href="https://www.folhape.com.br/noticias/nunca-vivemos-uma-interferencia-politica-tao-extrema-na-saude/173842/" target="_blank">Folha de Pernambuco - 'Nunca vivemos uma interferência política tão extrema na saúde pública', diz Dimas Covas</a></li>
+					<li align="justify"><a href="https://www.bbc.com/portuguese/internacional-56091612" target="_blank">BBC Brasil - Falta de medicamentos para câncer, sífilis e covid-19 escancara crise na saúde pública</a></li>
+					<li align="justify"><a href="https://g1.globo.com/sp/bauru-marilia/noticia/2021/02/17/tce-investiga-caos-na-saude-publica-de-jau-por-suspeita-de-falta-de-aplicacao-de-verba.ghtml" target="_blank">G1 - TCE investiga caos na saúde pública de Jaú por suspeita de falta de aplicação de verba</a></li>
+					<li align="justify"><a href="https://agenciapara.com.br/noticia/25319/" target="_blank">Para - Saúde pública do Pará recebe certificações de atestado de qualidade</a></li>
+					<li align="justify"><a href="https://g1.globo.com/bemestar/vacina/noticia/2021/02/20/ministerio-da-saude-publica-dispensa-de-licitacao-para-compra-das-vacinas-covaxin-e-sputnik-v.ghtml" target="_blank">G1 - Ministério da Saúde publica dispensa de licitação para compra das vacinas Covaxin e Sputnik V</a></li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="copyright" class="container">
+	<p>INSTITUTO FEDERAL DO MARANHÃO (CAMPUS BACABAL) | TRABALHO DE AUTORIA WEB</p>
+</div>
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Saúde Pública</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="shortcut icon" href="{% static 'icone/favicon.ico' %}" type="image/x-icon">
+<link href="http://fonts.googleapis.com/css?family=Raleway:400,200,500,600,700,800,300" rel="stylesheet" />
+<link href="{% static 'css/default.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/fonts.css' %}" rel="stylesheet" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="wrapper">
+	<div id="menu-wrapper">
+		<div id="menu" class="container">
+			<ul>
+				<li><a href="{% url 'home' %}">Página Principal</a></li>
+				<li class="current_page_item"><a href="#">Informe-se a respeito</a></li>
+				<li><a href="{% url 'depor' %}">Depoimentos</a></li>
+				<li><a href="{% url 'video' %}">Vídeos recomendados</a></li>
+				<li><a href="{% url 'sobre' %}">Sobre</a></li>
+			</ul>
+		</div>
+
+	<div id="header-wrapper">
+		<div id="header" class="container">
+			<div id="logo">
+				<h1><a href="#">O que é saúde pública?</a></h1>
+				<p>Descubra agora e <a href="#">informe-se a respeito</a> do assunto!</p>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div id="page" class="container">
+		<div id="content">
+			<div class="title">
+				<h2>O que é?</h2>
+				<br>
+				<span class="byline">Saúde Pública é todo o conjunto de medidas executadas pelo Estado (programas, serviços ou instituições) para garantir o bem-estar físico, mental e social da população.</span> </div>
+
+				<audio preload="metadata" controls autoplay loop>
+					<source src="{% static 'narracao/audio-conteudoprincipal.mp3' %}" type="audio/mpeg">
+					<p>Ops! Seu navegador não suporta reproduzir o áudio. <a href="narracao/audio-conteudoprincipal.mp3">Clique aqui para realizar o download do arquivo MP3.</a></p>
+				</audio>
+
+				<p><hr></p>
+
+			<p align="justify">No que tange ao ramo científico, ela é responsável em tratar doenças por meio da análise de indicadores de saúde e sua aplicação nos campos da biologia, epidemiologia e outros campos relacionados.</p>
+
+			<p align="justify">A Constituição de 1988 foi a primeira a tratar a saúde como pauta política. Antes dela, não havia legislação que sujeitasse o Poder Público a investir na área. Nesse sentido, o Sistema Único de Saúde, SUS, foi inserido no nosso sistema normativo e o acesso à saúde seria direito universal e de responsabilidade do Estado. Por ser um sistema gratuito, há uma grande parte da população que depende exclusivamente dele para receber atendimento.</p>
+
+			<h2>Como é realizado o atendimento público no Brasil?</h2>
+
+			<br>
+
+			<p align="justify">O atendimento pelo SUS é realizado por meio dos centros e postos de saúde, os hospitais públicos – incluindo os universitários, os laboratórios e hemocentros (bancos de sangue) -, os serviços de Vigilância Sanitária, Vigilância Epidemiológica, Vigilância Ambiental, além de fundações e institutos de pesquisa acadêmica e científica. Sua função é oferecer condições para a promoção, proteção e recuperação da saúde da população, reduzindo as enfermidades, controlando as doenças endêmicas e parasitárias e melhorando a vigilância à saúde, dando, assim, mais qualidade de vida ao brasileiro.</p>
+
+			<p align="justify">O desafio do Ministério da Saúde é garantir ao cidadão o direito ao atendimento à saúde e dar condições para que esse direito esteja ao alcance de todos, independentemente da condição social de cada um.</p>
+
+			<h2>O que caracteriza um "problema de saúde pública"?</h2>
+
+			<br>
+
+			<p align="justify">Um importante critério que deve ser considerado para definir um problema de saúde pública é o seu potencial epidêmico, uma vez que há um grande número de mortalidade e morbidade, os impactos na sociedade serão preocupantes, logo, trata-se de uma questão de saúde pública. É válido salientar que tal critério também pode ser aplicado de forma individual se tivermos como base os reflexos negativos na vida do paciente, sua dor, desconforto e o impacto na família.</p>
+
+			<P><a href="{% url 'bio' %}"><strong>DADOS BIBLIOGRÁFICOS</strong></a></P>
+
+		</div>
+		<div id="sidebar">
+			<div class="box2">
+				<div class="title">
+					<h2>NOTÍCIAS</h2>
+				</div>
+				<ul class="style2">
+					<li align="justify"><a href="https://www.folhape.com.br/noticias/nunca-vivemos-uma-interferencia-politica-tao-extrema-na-saude/173842/" target="_blank">Folha de Pernambuco - 'Nunca vivemos uma interferência política tão extrema na saúde pública', diz Dimas Covas</a></li>
+					<li align="justify"><a href="https://www.bbc.com/portuguese/internacional-56091612" target="_blank">BBC Brasil - Falta de medicamentos para câncer, sífilis e covid-19 escancara crise na saúde pública</a></li>
+					<li align="justify"><a href="https://g1.globo.com/sp/bauru-marilia/noticia/2021/02/17/tce-investiga-caos-na-saude-publica-de-jau-por-suspeita-de-falta-de-aplicacao-de-verba.ghtml" target="_blank">G1 - TCE investiga caos na saúde pública de Jaú por suspeita de falta de aplicação de verba</a></li>
+					<li align="justify"><a href="https://agenciapara.com.br/noticia/25319/" target="_blank">Para - Saúde pública do Pará recebe certificações de atestado de qualidade</a></li>
+					<li align="justify"><a href="https://g1.globo.com/bemestar/vacina/noticia/2021/02/20/ministerio-da-saude-publica-dispensa-de-licitacao-para-compra-das-vacinas-covaxin-e-sputnik-v.ghtml" target="_blank">G1 - Ministério da Saúde publica dispensa de licitação para compra das vacinas Covaxin e Sputnik V</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="copyright" class="container">
+	<p>INSTITUTO FEDERAL DO MARANHÃO (CAMPUS BACABAL) | TRABALHO DE AUTORIA WEB</p>
+</div>
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body>
+</html>

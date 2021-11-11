@@ -40,10 +40,10 @@ Tema do site: Saúde Pública
 		<div id="menu" class="container">
 			<ul>
 				<li class="current_page_item"><a href="#">Página Principal</a></li>
-				<li><a href="informe-se.html">Informe-se a respeito</a></li>
-				<li><a href="depoimentos.html">Depoimentos</a></li>
-				<li><a href="videos.html">Vídeos recomendados</a></li>
-				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="{% url 'info' %}">Informe-se a respeito</a></li>
+				<li><a href="{% url 'depor' %}">Depoimentos</a></li>
+				<li><a href="{% url 'video' %}">Vídeos recomendados</a></li>
+				<li><a href="{% url 'sobre' %}">Sobre</a></li>
 			</ul>
 		</div>
 

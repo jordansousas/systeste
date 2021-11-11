@@ -1,0 +1,117 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Saúde Pública</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="shortcut icon" href="{% static 'icone/favicon.ico' %}" type="image/x-icon">
+<link href="http://fonts.googleapis.com/css?family=Raleway:400,200,500,600,700,800,300" rel="stylesheet" />
+<link href="{% static 'css/default.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/fonts.css' %}" rel="stylesheet" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="wrapper">
+	<div id="menu-wrapper">
+		<div id="menu" class="container">
+			<ul>
+				<li><a href="{% url 'home' %}">Página Principal</a></li>
+				<li><a href="{% url 'info' %}">Informe-se a respeito</a></li>
+				<li class="current_page_item"><a href="#">Depoimentos</a></li>
+				<li><a href="{% url 'video' %}">Vídeos recomendados</a></li>
+				<li><a href="{% url 'sobre' %}">Sobre</a></li>
+			</ul>
+		</div>
+
+	<div id="header-wrapper">
+		<div id="header" class="container">
+			<div id="logo">
+				<h1><a href="#">DEPOIMENTOS</a></h1>
+				<p>O que o povo acha sobre a saúde pública do Brasil?</p>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div id="page" class="container">
+		<div id="content">
+			<div class="title">
+				<h2>Vamos descobrir o que o povo acha sobre a saúde pública do Brasil!</h2>
+				<br>
+				<span class="byline">Lembrando: Saúde Pública é todo o conjunto de medidas executadas pelo Estado (programas, serviços ou instituições) para garantir o bem-estar físico, mental e social da população. Tenha o conceito em mente!</span> </div>
+
+				<audio preload="metadata" controls autoplay loop>
+					<source src="{% static 'narracao/audio-depoimentos.mp3' %}" type="audio/mpeg">
+					<p>Ops! Seu navegador não suporta reproduzir o áudio. <a href="narracao/audio-depoimentos.mp3">Clique aqui para realizar o download do arquivo MP3.</a></p>
+				</audio>
+
+				<p><hr></p>
+
+				<h2>Depoimento de Oswaldo:</h2>
+
+				<br>
+
+			<p align="justify">"Infelizmente o SUS está subfinanciado, uma situação agravada pela crise econômica financeira e política do país", observou o diretor  da FSP (Faculdade de Saúde Pública) da USP, Oswaldo Yoshimi Tanaka sobre pela falta de médicos.</p>
+
+			<h2>Depoimento de Maria:</h2>
+
+			<br>
+
+			<p align="justify">Em entrevista ao ‘Nexo’, a pesquisadora Maria Helena Machado, da Fiocruz, responde sobre a seguinte pergunta: “O sistema de saúde pode entrar em colapso pela exaustão dos profissionais? Que impacto isso teria para o público?”</p>
+
+			<p align="justify">MARIA HELENA MACHADO: <q>Com certeza. Isso atinge mais fortemente os médicos e as equipes de enfermagem. Esses profissionais se sentem esgotados, com medo e estressados e tendem a se afastar do trabalho — ou porque estão contaminados ou porque percebem que a situação está num nível insustentável. Isso é gravíssimo. Esses profissionais afastados poderiam até ser substituídos por uma outra força de trabalho da mesma categoria, mas não é bem assim. Os que estão na linha de frente adquiriram experiência, conhecimento. São especializados no atendimento a doenças graves como essa, na emergência, na urgência das UTIs. São os intensivistas, os infectologistas, os clínicos, a equipe de enfermagem. E isso não se forma no mesmo dia.</q></p>
+
+			<p align="justify"><q>É preciso ter medidas que possam amenizar o sofrimento desses profissionais. Uma delas, que a gente não está vendo acontecer, infelizmente, vem da própria população, que desrespeitosamente afronta a pandemia, ao não ter os cuidados de distanciamento, de isolamento, as coisas básicas que a civilidade exige das pessoas. Isso tudo dá uma sensação de muita insegurança para o futuro, para o que está previsto para daqui a um ou dois.</q></p>
+
+			<h2>Depoimento de Dinamar:</h2>
+
+			<br>
+
+			<p align="justify">A vendedora Dinamar Silva, de 42 anos, aguarda desde janeiro por uma consulta para o filho de 16 anos . “Eu marquei uma consulta para mim em janeiro e sabe para quando eles agendaram? Para julho”, relata. Com todas as cadeiras da sala de espera ocupadas em um hospital de Ribeirão Preto, algumas pessoas tiveram que aguardar atendimento em bancos na parte externa da unidade, sob calor de 36,4ºC.</p>
+
+			<h2>Depoimento de Ana:</h2>
+
+			<br>
+
+			<p align="justify">“O SUS é uma conquista da população que não pode ser desprezada. Ele aumentou o acesso dos brasileiros à saúde de uma forma impensável há 30 anos”, disse Ana Maria Malik, coordenadora do GVsaúde, programa de gestão em saúde da Fundação Getulio Vargas.</p>
+
+		</div>
+		<div id="sidebar">
+			<div class="box2">
+				<div class="title">
+					<h2>NOTÍCIAS</h2>
+				</div>
+				<ul class="style2">
+
+					<li align="justify"><a href="https://www.folhape.com.br/noticias/nunca-vivemos-uma-interferencia-politica-tao-extrema-na-saude/173842/" target="_blank" >Folha de Pernambuco - 'Nunca vivemos uma interferência política tão extrema na saúde pública', diz Dimas Covas</a></li>
+					<li align="justify"><a href="https://www.bbc.com/portuguese/internacional-56091612" target="_blank">BBC Brasil - Falta de medicamentos para câncer, sífilis e covid-19 escancara crise na saúde pública</a></li>
+					<li align="justify"><a href="https://g1.globo.com/sp/bauru-marilia/noticia/2021/02/17/tce-investiga-caos-na-saude-publica-de-jau-por-suspeita-de-falta-de-aplicacao-de-verba.ghtml" target="_blank">G1 - TCE investiga caos na saúde pública de Jaú por suspeita de falta de aplicação de verba</a></li>
+					<li align="justify"><a href="https://agenciapara.com.br/noticia/25319/" target="_blank">Para - Saúde pública do Pará recebe certificações de atestado de qualidade</a></li>
+					<li align="justify"><a href="https://g1.globo.com/bemestar/vacina/noticia/2021/02/20/ministerio-da-saude-publica-dispensa-de-licitacao-para-compra-das-vacinas-covaxin-e-sputnik-v.ghtml" target="_blank">G1 - Ministério da Saúde publica dispensa de licitação para compra das vacinas Covaxin e Sputnik V</a></li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="copyright" class="container">
+	<p>INSTITUTO FEDERAL DO MARANHÃO (CAMPUS BACABAL) | TRABALHO DE AUTORIA WEB</p>
+</div>
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body>
+</html>
