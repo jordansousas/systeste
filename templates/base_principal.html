@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -10,7 +12,6 @@ Alunos:
 Danilo de Brito Morais
 Jamilly da Sulva Fernandes
 Jordan Sousa da Silva
-José Lucas Torres da Silva
 Nicolly Ádrya Nascimento Almeida
 Reidyere Nascimento da Silva
 
@@ -24,10 +25,10 @@ Tema do site: Saúde Pública
 <title>Saúde Pública</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
-<link rel="shortcut icon" href="icone/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="{% static 'icone/favicon.ico' %}" type="image/x-icon">
 <link href="http://fonts.googleapis.com/css?family=Raleway:400,200,500,600,700,800,300" rel="stylesheet" />
-<link href="default.css" rel="stylesheet" type="text/css" media="all" />
-<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/default.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/fonts.css' %}" rel="stylesheet" type="text/css" media="all" />
 </head>
 
 <body>
@@ -70,7 +71,7 @@ Tema do site: Saúde Pública
 				<span class="byline">Nem sempre a saúde foi pensada como algo público. Somente com a consolidação dos Estados nacionais modernos é que as populações passam a ser consideradas como algo a ser preservada.</span> </div>
 
 				<audio preload="metadata" controls autoplay loop>
-					<source src="narracao/audio-homepage.mp3" type="audio/mpeg">
+					<source src="{% static 'narracao/audio-homepage.mp3' %}" type="audio/mpeg">
 					<p>Ops! Seu navegador não suporta reproduzir o áudio. <a href="narracao/audio-homepage.mp3">Clique aqui para realizar o download do arquivo MP3.</a></p>
 				</audio>
 
